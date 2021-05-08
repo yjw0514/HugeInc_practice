@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+
+.gnb_logo_wrap {
+    width: 74px;
+    height: 74px;
+    background-color: rgb(244,244,244);
+    position: fixed;
+    top: 50px;
+    left: calc(50% - 37px);
+    z-index: 10000;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.gnb_logo {
+    width: 24px;
+    height: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.2s, top 0.4s, opacity 0.4s;
+    display: block;
+}
+
+.gnb_logo_huge {
+    width: 60px;
+    height: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s;
+    fill: #ea178c;
+    display: none;
+}
+
+#gnb_window {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* opacity: 1; */
+    border: 0px solid rgb(244,244,244);
+    border-top: 0px solid rgb(244,244,244);
+    z-index: 100;
+    transition: border 0.2s, top 0.4s;
+    display:none;
+}
+
+.hero_wrap {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/hero.jpg);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#hero_title {
+    position: absolute;
+    bottom: 100px;
+    left: 12.65832%;   
+    font-size: 170px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+/* 펼쳐진 네비게이션 */
+#gnb_wide {
+    width: 100%;
+    height: 440px;
+    position: fixed;
+    top: -440px;
+    left: 0;
+    background-color: rgb(244,244,244);
+    z-index: 150;
+    padding: 175px 0 0 0;
+    transition: all 0.4s;
+}
+
+.gnb_wide_menu {
+    width: 1050px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.gnb_wide_item h3{
+    width: 190px;
+    margin: 0 10px;
+    font-size: 36px;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.gnb_wide_item h3:hover {
+    color: #ea178c;
+}
+
+.gnb_wide_item p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.65px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    margin: 4px 0 35px;
+}
+
+.gnb_wide_item span {
+    display: block;
+    height: 1px;
+    width: 48px;
+    margin:  0 auto;
+    border-bottom: 1px solid rgba(0,0,0,0.8);
+}
+
+.gnb_wide_foot {
+    margin: 75px 0 0;
+}
+
+.gnb_wide_foot p {
+    text-align: center;
+    font-size: 14px ;
+    letter-spacing: -0.65px;
+    color: rgb(0, 0, 0);
+
+}
+
+.gnb_wide_foot a {
+    font-family: HugeGothic-Bold; 
+    font-size: 16px;
+    letter-spacing: 0;
+    color: rgb(0, 0, 0);
+}
+
+.gnb_wide_foot a span {
+    color: #ea178c;
+}
+
+.gnb_wide_foot a:hover {
+    color: #ea178c;
+    cursor: pointer;
+}
+
+/* Hello */
+#hello {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.hello_wrap {
+    width: 1440px;
+    padding: 100px 10px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.hello_left {
+    width: 33.3333%;
+}
+
+.hello_left_index {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    border-top: 1px solid rgb(255,255,255);
+    padding: 14px 0 0;
+    letter-spacing: 0;
+}
+
+.hello_right {
+    width: 66.6666%;
+}
+
+.hello_right_title {
+    width: 600px;
+    font-size: 56px;
+    font-family: Galaxie-Book; 
+    line-height: 70px;
+    letter-spacing: -2px;
+    margin: 0 0 46px;
+}
+
+.hello_right_box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hello_right_box_item {
+    width: calc(50% - 10px);
+    height: 240px;
+    margin: 100px 0 0;
+    padding: 0 10px 0 0;
+}
+
+.hello_right_box_title,
+.hello_right_box_call,
+.hello_right_box_email {
+    font-family: Galaxie-Book; 
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 34px;
+    color: rgb(255, 255, 255);
+}
+
+.hello_right_box_title {
+margin-bottom: 40px;
+}
+
+
+/* Talk  */
+#talk {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.talk_wrap {
+    width: 74.68354%;
+    padding: 100px 0;
+    margin: 0 auto;
+    display: flex;
+}
+
+.talk_left {
+    width: 33.3333%;
+}
+
+.talk_left_index {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    border-top: 1px solid rgb(0, 0, 0);
+    padding: 14px 0 0;
+    letter-spacing: 0;
+}
+
+.talk_right {
+    width: 66.6666%;
+}
+
+.talk_right_title {
+    width: 100%;
+    font-size: 56px;
+    font-family: Galaxie-Book; 
+    line-height: 70px;
+    letter-spacing: -2px;
+    margin: 0 0 46px;
+}
+
+/* .talk_name_eyebrow,
+.talk_email_eyebrow,
+.talk_company_eyebrow,
+.talk_message_eyebrow {
+    display:none;
+    color: #3a97f5;
+    font-size: 14px;
+    font-weight: 400;
+} */
+
+#talk_form {
+    width: 100%;
+}
+
+.talk_input_wrap {
+    margin: 0 0 48px;
+}
+
+#talk_name,
+#talk_email,
+#talk_company {
+    width: 100%;
+    height: 48px;
+    font-family: Galaxie-Book; 
+    font-size: 22px;
+    line-height: 22px;
+    padding: 0 10px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#talk_name:focus,
+#talk_email:focus,
+#talk_company:focus {
+    outline: 0;
+    border-bottom: 1px solid #3a97f5;
+}
+
+#talk_message {
+    width: 100%;
+    height: 96px;
+    font-family: serif;
+    font-size: 22px;
+    padding: 20px;
+}
+
+#talk_message:focus  {
+    outline: 0;
+    border: 1px solid #3a97f5;
+}
+
+.talk_notice {
+    font-family: serif;
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+    margin: 0 0 48px;
+}
+
+.talk_notice a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#talk_send_btn {
+    width: 100%;
+    height: 84px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    letter-spacing: 1px;
+    font-family: HugeGothic-Bold; 
+    -webkit-font-smoothing: antialiased;   
+}
+
+.talk_eyebrow {
+    font-size: 16px; 
+    font-family: serif; 
+    color:#3a97f5; 
+    line-height: 30px; 
+    display: none;
+}
+
+.talk_name_require, 
+.talk_email_require, 
+.talk_company_require, 
+.talk_message_require {
+    font-size: 16px; 
+    font-family: serif; 
+    color:#e7185d; 
+    line-height: 30px; 
+    display: none;
+    margin: 10px 0 0;
+}
+
+/* Office */
+#office {
+width: 100%;
+height: auto;
+padding: 100px 0;
+background-color: rgb(0, 0, 0);
+}
+
+.office_wrap {
+width: 89.68354%;
+height: 100%;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+background-color: rgb(22, 22, 22);
+
+}
+
+.office_item {
+width: 33.3333%;
+height: 100%;
+padding: 115px 70px 30px;
+border-right: 1px solid rgb(0, 0, 0);
+border-bottom: 1px solid rgb(0, 0, 0);
+position: relative;
+}
+
+.office_name {
+font-size: 44px;
+font-weight: 400;
+margin: 0 0 50px;
+
+}
+
+.office_greeting {
+font-size: 24px;
+line-height: 30px;
+font-weight: 400;
+margin: 0 0 20px;
+
+letter-spacing: 0;
+}
+
+.office_time,
+.office_tell,
+.office_email {
+font-size: 18px;
+font-weight: 400;
+font-family: Galaxie-Book; 
+line-height: 34px;
+letter-spacing: -0.275px;
+
+}
+
+.office_email {
+    height: 100px;
+}
+
+/* .office_item svg {
+width: 30px;
+fill: white;
+stroke: #000;
+} */
+
+
+.office_icon {
+position: absolute;
+right: 30px;
+bottom: 35px;
+width: 30px;
+height: 35px;
+
+}
+
+.icon_day {
+width: 35px;
+fill: white;
+stroke: #000;
+stroke-width: 3px;
+
+}
+
+.icon_night {
+width: 35px;
+fill: white;
+}
+
+
+.office_item a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0);
+    transition: all 0.4s;
+}
+
+.office_item a:hover {
+background-color: rgba(0, 0, 0, 0.6);
+} 
+
+ /* Magenta */
+#magenta {
+    width: 100%;
+    height: 720px;
+    background-image: url(../img/magenta_bg_1.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.magenta_wrap {
+    width: 74.68354%;
+    padding: 200px 0;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.magenta_left {
+    width: 25.42%;
+}
+
+.magenta_img {
+    width: 100%;
+}
+
+.magenta_right {
+    width: 74.58%;
+    color: rgb(255,255,255);
+    padding: 0 8.45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.magenta_title,
+.magenta_detail {
+    color: rgb(255,255,255);
+}
+
+.magenta_fill {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.7);
+}

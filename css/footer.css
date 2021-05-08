@@ -1,0 +1,17 @@
+footer { width: 100%; padding: 65px 0 80px;
+background-color: rgb(0,0,0); color:rgb(255,255,255);}
+.footer_wrap { width: 74.68354%; display: flex; justify-content: space-between; margin: 0 auto;}
+
+.footer_left span {line-height: 80px; font-size: 14px; font-family: HugeGothic-Bold; -webkit-font-smoothing: antialiased; }
+
+.footer_logo_a { padding: 0 32px 0 0; margin:0 32px 0 0; border-right: 1px solid rgba(255,255,255,1); }
+
+.footer_logo { width: 80px; fill: rgb(255,255,255); vertical-align: middle; }
+
+.footer_menu { display: flex; justify-content: flex-end; margin: 0 0 10px;}
+.footer_menu a { font-family: HugeGothic-Bold; font-size:14px; line-height: 20px; color:rgb(136,136,136); margin: 0 0 0px 12px;} 
+.footer_menu a:hover { color: rgb(255,255,255);}
+
+.footer_right p { font-size: 12px; line-height: 23px; color:rgb(136,136,136); text-align: right;}
+.footer_right p a { font-size: 12px; line-height: 23px; color:rgb(136,136,136);}
+.footer_right p a:hover { color: rgb(255,255,255);}
